@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Base64 Tool</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Base64 Tool</h1>
+
+    <textarea
+      id="input"
+      placeholder="Paste text or Base64 here…"
+      spellcheck="false"
+    ></textarea>
+
+    <div class="row">
+      <button id="encodeBtn" class="primary">Encode →</button>
+      <button id="decodeBtn" class="primary">← Decode</button>
+    </div>
+
+    <div id="status"></div>
+
+    <textarea
+      id="output"
+      placeholder="Result appears here…"
+      spellcheck="false"
+      readonly
+    ></textarea>
+
+    <div class="row">
+      <button id="swapBtn">↑ To input</button>
+      <button id="copyBtn">Copy</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

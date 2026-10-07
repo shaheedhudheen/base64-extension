@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Base64 Tool",
+  "version": "1.0.0",
+  "description": "Quickly encode and decode Base64 text with full Unicode support.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Base64 Tool",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
